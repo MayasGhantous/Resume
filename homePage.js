@@ -1,26 +1,19 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const roundImages = document.querySelectorAll('.round-image');
+function github()
+{
+    window.open("https://github.com/MayasGhantous", "_blank");
+}
 
-    // Set positions immediately when the page loads
-    roundImages.forEach((image, index) => {
-        setPosition(image, index);
-    });
+function linkedIn()
+{
+    window.open("https://www.linkedin.com/in/mias-ghantous-5a018226a", "_blank");
+}
 
-    function setPosition(image, index) {
-        const radius = 150 * 1.1; // Distance from center (adjust as needed)
-        const angle = (index * 72) * (Math.PI / 180); // Divide 360 degrees by 5 images
+function contact()
+{
+    alert("You can contant me hover you want\n\nEmail: miasghantous@gmail.com\n\nPhone:+972 052-9522888\n\nInstgram: mayasghantous");
+}
 
-        // Calculate final positions based on center of the container
-        const x = Math.cos(angle) * radius;
-        const y = Math.sin(angle) * radius;
-
-        // Set position and make image visible
-        image.style.opacity = '1';
-        
-        image.style.transform = `translate(${x}px, ${y}px)`;
-    }
-});
-
-function imageClicked(name) {
-    alert(name);
+function about()
+{
+    window.location.href = 'about_me.html';
 }
